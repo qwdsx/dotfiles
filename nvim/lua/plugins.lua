@@ -16,7 +16,6 @@ local ensure_packer = function()
 	use 'nvim-lualine/lualine.nvim'
 	use 'nvim-tree/nvim-tree.lua'
 	use { 'catppuccin/nvim', as = 'catppuccin' }
-	use 'kvrohit/mellow.nvim'
 	use 'norcalli/nvim-colorizer.lua'
   
 	-- Automatically set up your configuration after cloning packer.nvim
