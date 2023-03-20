@@ -38,6 +38,7 @@ pkgs=(
 	"convert"
 	"lua"
 	"reflector"
+	"obs-studio"
 )
 
 for pkg in "${pkgs[@]}"; do
