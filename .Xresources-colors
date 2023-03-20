@@ -1,0 +1,41 @@
+#define FOREGROUND #cccccc
+#define BACKGROUND #171717
+
+#define COLOR0  #171717
+#define COLOR1  #ff9999
+#define COLOR2  #b3ff99
+#define COLOR3  #d9c98c
+#define COLOR4  #8cadd9
+#define COLOR5  #a78cd9
+#define COLOR6  #8cd9c8
+#define COLOR7  #cccccc
+
+#define COLOR8  #ff1744
+#define COLOR9  #212121
+#define COLOR10 #363636
+#define COLOR11 #4f4f4f
+#define COLOR12 #707070
+#define COLOR13 #999999
+#define COLOR14 #99ffe9
+#define COLOR15 #969696
+
+FOREGROUND="#cccccc"
+BACKGROUND="#171717"
+
+COLOR0=#171717
+COLOR1=#ff9999
+COLOR2=#b3ff99
+COLOR3=#d9c98c
+COLOR4=#8cadd9
+COLOR5=#a78cd9
+COLOR6=#8cd9c8
+COLOR7=#cccccc
+
+COLOR8=#ff1744
+COLOR9=#212121
+COLOR10=#363636
+COLOR11=#4f4f4f
+COLOR12=#707070
+COLOR13=#999999
+COLOR14=#99ffe9
+COLOR15=#969696

@@ -1,0 +1,7 @@
+-x
+--ignore-errors
+--audio-format "mp3"
+--audio-quality "0"
+--hls-prefer-ffmpeg
+--yes-playlist
+-o "${HOME}/Music/%(playlist)s/%(title)s.%(ext)s" https://www.youtube.com/playlist?list=PLuZPZXDmytnFez6pV1ZXpFMauG6bwH-uz

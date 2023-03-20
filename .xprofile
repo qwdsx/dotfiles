@@ -1,0 +1,6 @@
+export GLFW_IM_MODULE='uim'
+export GTK_IM_MODULE='uim'
+export QT_IM_MODULE='uim'
+export RANGER_LOAD_DEFAULT_RC=FALSE
+uim-xim &
+export XMODIFIERS='@im=uim'

@@ -1,0 +1,35 @@
+* {
+    foreground: #cccccc;
+    backlight: #ccffeedd;
+    background-color: transparent;
+    background: #171717;
+    foreground: #cccccc;
+    dark: #333;
+
+    // normal
+        black:   #171717;
+        red:     #262626;
+        green:   #3b3b3b;
+        yellow:  #ffff99;
+        blue:    #99ecff;
+        magenta: #ce99ff;
+        cyan:    #99ffda;
+        white:   #cccccc;
+    
+    // bright
+        lightblack:   #ff1744;
+        tlightblack:  #ff1744fa;
+        lightred:     #ff9999;
+        lightgreen:   #c9ff99;
+        lightyellow:  #ffff99;
+        lightblue:    #99ecff;
+        lightmagenta: #ce99ff;
+        lightcyan:    #99ffda;  // comments
+        tcyan:        #cc99ffda;
+        lightwhite:   #cccccc;
+
+    highlight: underline bold #ffffff;
+
+    transparent: rgba(0,0,0,0);
+    font: "mononoki 12";
+}

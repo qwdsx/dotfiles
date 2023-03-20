@@ -1,0 +1,17 @@
+#
+# .bashrc aliases
+#
+
+alias ls='ls -F --color=auto'
+alias kill='killcmd'
+alias v='nvim'
+alias sxiv='sxiv -a -s f'
+alias cal='cal -m'
+alias setsysc='sudo sh -c "sysctl -w abi.vsyscall32=0"'
+alias pm='sudo pacman'
+alias lg='lazygit'
+alias l='exa -a'
+
+function killcmd() {
+	killall -9 "$1"
+}

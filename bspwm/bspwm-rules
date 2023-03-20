@@ -1,0 +1,63 @@
+#!/bin/sh
+
+# make all windows float by default
+#bspc rule -a * state=floating
+
+
+# bspc rule -a firefox desktop='^2'
+bspc rule -a discord desktop='^3'
+bspc rule -a *:cmus desktop='^3'
+bspc rule -a *:ncmpcpp desktop='^3'
+bspc rule -a obs desktop='^0'
+bspc rule -a zoom follow=off border=off
+
+#
+# floating windows
+#
+
+floating=(
+    "Sxiv" 
+    "Steam" 
+    "Virt-manager" 
+    "scrcpy" 
+    "Thunar" 
+    "battle.net.exe" 
+    "leagueclientux.exe" 
+    "riotclientux.exe" 
+    "zoom" 
+    "MultiMC" 
+    "ninjabrainbot-Main"
+    #"discord" 
+    )
+for float in ${floating[@]}; do
+    bspc rule -a $float state=floating
+done
+
+#
+# games to desktop 5
+#
+
+games=(
+    "league of legends.exe" 
+    "hearthstone.exe" 
+    "battle.net.exe" 
+    "Minecraft* 1.16.1"
+    "riotclientux.exe" 
+    "leagueclientux.exe"
+    "growtopia.exe"
+	"lutris"
+    )
+for game in ${games[@]}; do
+    bspc rule -a $game desktop='^5'
+done
+
+game_ids=$(ls ~/.steam/steam/steamapps | grep appmanifest | sed 's/[^0-9]*//g')
+for id in $game_ids; do
+    bspc rule -a "steam_app_$id" desktop='^5' state=tiled
+done
+
+game_names=$(ls ~/.steam/steam/steamapps/common)
+for name in $game_ids; do
+    bspc rule -a "$name" desktop='^5' state=tiled
+done
+
