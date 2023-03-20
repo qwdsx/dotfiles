@@ -1,4 +1,3 @@
-
 sudo chmod +x ./dotfiles.sh
 sudo chmod +x ./pm-software.sh
 sudo chmod +x ./aur-software.sh

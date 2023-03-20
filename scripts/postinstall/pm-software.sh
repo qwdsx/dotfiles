@@ -37,6 +37,7 @@ pkgs=(
 	"ffmpeg"
 	"convert"
 	"lua"
+	"reflector"
 )
 
 for pkg in "${pkgs[@]}"; do
