@@ -62,8 +62,11 @@ super + ctrl + {m,x,y,z}
 #
 
 # focus the node in the given direction
-#super + {_,shift + } {Left,Down,Up,Right}
-#	bspc node -{f,s} {west,south,north,east}
+super + {_,shift + } {Left,Down,Up,Right}
+	bspc node -{f,s} {west,south,north,east}
+
+super + {_,shift + } {h,k,j,l}
+	bspc node -{f,s} {west,south,north,east}
 
 # focus the node for the given path jump
 super + {p,b,comma,period}
@@ -121,19 +124,19 @@ super + {v,h,space}
 #super + alt + {h,j,k,l}
 #	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 
-super + shift + h
+super + alt + h
 	bspc node -z right +20 0
 	bspc node -z left -20 0
 
-super + shift + l
+super + alt + l
 	bspc node -z right -20 0
 	bspc node -z left +20 0
 
-super + shift + j
+super + alt + j
 	bspc node -z top 0 -20
 	bspc node -z bottom 0 +20
 
-super + shift + k
+super + alt + k
 	bspc node -z top 0 +20
 	bspc node -z bottom 0 -20
 

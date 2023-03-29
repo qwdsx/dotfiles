@@ -1,5 +1,11 @@
 
 pkgs=(
+	"grub"
+	"efibootmgr"
+	"dialog"
+	"mtools"
+	"dosfstools"
+	"base-devel"
 	"bspwm"
 	"sxhkd"
 	"alacritty"
@@ -24,7 +30,6 @@ pkgs=(
 	"dialog"
 	"networkmanager"
 	"network-manager-applet"
-	"neofetch"
 	"jq"
 	"curl"
 	"wget"
@@ -39,6 +44,10 @@ pkgs=(
 	"lua"
 	"reflector"
 	"obs-studio"
+	"noto-fonts"
+	"noto-fonts-cjk"
+	"noto-fonts-emoji"
+	"noto-fonts-extra"
 )
 
 for pkg in "${pkgs[@]}"; do

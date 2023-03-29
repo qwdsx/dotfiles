@@ -24,6 +24,7 @@ xrdb ~/.Xresources
 
 # pgrep -x ncmpcpp > /dev/null || $terminal --class ncmpcpp -e ncmpcpp &
 pgrep -x Discord > /dev/null || discord &
+pgrep -x obs > /dev/null || obs &
 
 # desktops
 if [[ $HOSTNAME == "sharkcat" ]]; then

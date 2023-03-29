@@ -10,6 +10,7 @@ pkgs=(
 	"ttf-mononoki"
 	"llpp"
 	"vscodium"
+	"uim"
 )
 
 for pkg in "${pkgs[@]}"; do
