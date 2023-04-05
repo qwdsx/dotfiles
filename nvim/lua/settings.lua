@@ -4,8 +4,6 @@ local o = vim.o
 -- cmd('syntax on')
 -- vim.api.nvim_command('filetype plugin indent on')
 
-vim.cmd([[ colorscheme catppuccin ]])
-
 o.termguicolors = true
 o.background = 'dark'
 

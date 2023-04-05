@@ -84,11 +84,6 @@ _G.packer_plugins = {
     path = "/home/lassi/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
-  ["mellow.nvim"] = {
-    loaded = true,
-    path = "/home/lassi/.local/share/nvim/site/pack/packer/start/mellow.nvim",
-    url = "https://github.com/kvrohit/mellow.nvim"
-  },
   ["nvim-colorizer.lua"] = {
     loaded = true,
     path = "/home/lassi/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
