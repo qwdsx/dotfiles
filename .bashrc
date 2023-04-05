@@ -21,5 +21,5 @@ function dynamic_ps1() {
 }
 
 #PROMPT_COMMAND="dynamic_ps1"
-PS1='\e[01;31m\]\w\[\e[01;33m\] >\[\e[01;00m\] '
-#PS1='\w > '
+#PS1='\e[01;31m\]\w\[\e[01;33m\] >\[\e[01;00m\] '
+PS1='\w > '
