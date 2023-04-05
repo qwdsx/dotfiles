@@ -1,5 +1,1 @@
-configuration {
-	//theme: "./themes/theme.rasi";
-}
-
 @theme "./themes/theme3.rasi"

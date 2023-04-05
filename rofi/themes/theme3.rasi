@@ -59,7 +59,7 @@ listview {
     padding: 0px;
     background-color: @black;
     dynamic: false;
-    lines: 100;
+    lines: 50;
     layout: horizontal;
 }
 

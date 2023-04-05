@@ -31,5 +31,5 @@
     highlight: underline bold #ffffff;
 
     transparent: rgba(0,0,0,0);
-    font: "mononoki 12";
+    font: "mononoki 10";
 }
