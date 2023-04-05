@@ -5,11 +5,12 @@
 
 
 # bspc rule -a firefox desktop='^2'
+bspc rule -a *:* follow=off
 bspc rule -a discord desktop='^3'
 bspc rule -a *:cmus desktop='^3'
 bspc rule -a *:ncmpcpp desktop='^3'
 bspc rule -a obs desktop='^0'
-bspc rule -a zoom follow=off border=off
+bspc rule -a zoom border=off
 bspc rule -a "obs" desktop='^1'
 
 #
