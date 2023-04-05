@@ -27,13 +27,13 @@ case $option in
         steam steam://rungameid/1061090
         ;;
     $lol)
-        env LUTRIS_SKIP_INIT=1 lutris lutris:rungameid/2
+	python3 ~/Games/leagueoflegends/launch-league-of-legends.py
         ;;
     $hs)
         env LUTRIS_SKIP_INIT=1 lutris lutris:rungameid/4
         ;;
     $mc)
         multimc &
-	java -jar Downloads/Ninjabrain-Bot-1.3.2.jar
-	;;
+	    java -jar Downloads/Ninjabrain-Bot-1.3.2.jar
+	    ;;
 esac

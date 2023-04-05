@@ -1,5 +1,8 @@
 
 pkgs=(
+	"xorg"
+	"xorg-server"
+	"discord"
 	"grub"
 	"efibootmgr"
 	"dialog"
@@ -38,16 +41,22 @@ pkgs=(
 	"npm"
 	"gcc"
 	"python"
+	"lazygit"
 	"dhcpcd"
 	"ffmpeg"
 	"convert"
 	"lua"
+	"dunst"
 	"reflector"
 	"obs-studio"
 	"noto-fonts"
 	"noto-fonts-cjk"
 	"noto-fonts-emoji"
 	"noto-fonts-extra"
+	"picom"
+	"virt-manager"
+	"dnsmasq"
+	"solaar"
 )
 
 for pkg in "${pkgs[@]}"; do

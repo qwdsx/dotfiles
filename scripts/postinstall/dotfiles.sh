@@ -42,4 +42,4 @@ for df in "${dfs2[@]}"; do
 done
 
 ln -s "${HOME}/dotfiles/scripts" scripts
-cp "${HOME}/dotfiles/pipewire" "${HOME}/.config/"
+cp -r "${HOME}/dotfiles/pipewire" "${HOME}/.config/"

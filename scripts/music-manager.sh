@@ -24,6 +24,7 @@ case $option in
         dunstify -t 3000 "deleted: $song"
         ;;
     "update")
+        node ${HOME}/scripts/update-songs.js
         alacritty -e yt-dlp
 		mpc update
 		mpc clear
