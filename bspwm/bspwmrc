@@ -5,9 +5,11 @@
 
 # variables
 terminal="alacritty"
-editor="vim"
-monitor1=$(xrandr | grep primary | awk '{print $1}')
-monitor2=$(xrandr | grep connected | awk '{i++}i==2' | awk '{print $1}')
+editor="nvim"
+#monitor1=$(xrandr | grep "primary" | awk '{print $1}')
+#monitor2=$(xrandr | grep -w "connected" | awk '{i++}i==2' | awk '{print $1}')
+monitor1="DP-0"
+monitor2="HDMI-0"
 
 # auto exec
 pgrep -x sxhkd > /dev/null || sxhkd &
@@ -28,8 +30,8 @@ pgrep -x obs > /dev/null || obs &
 
 # desktops
 if [[ $HOSTNAME == "sharkcat" ]]; then
-	bspc monitor $monitor2 -d 1 2 3
  	bspc monitor $monitor1 -d 4 5 6 7 8 9 10
+	bspc monitor $monitor2 -d 1 2 3
     # bspc monitor -d 1 2 3 4 5 6 7
 elif [[ $HOSTNAME == "catshark" ]]; then
     bspc monitor -d 1 2 3 4 5 6 7 8 9 10
