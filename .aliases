@@ -11,6 +11,7 @@ alias setsysc='sysctl -w abi.vsyscall32=0'
 alias pm='sudo pacman'
 alias lg='lazygit'
 alias l='exa -a'
+alias ex='sudo chmod +x'
 
 function killcmd() {
 	killall -9 "$1"
