@@ -40,12 +40,12 @@ done
 #
 
 games=(
-    "league of legends.exe" 
     "hearthstone.exe" 
     "battle.net.exe" 
     "Minecraft* 1.16.1"
     "riotclientux.exe" 
     "leagueclientux.exe"
+    "league of legends.exe" 
     "growtopia.exe"
 	"lutris"
     )
@@ -59,7 +59,7 @@ for id in $game_ids; do
 done
 
 game_names=$(ls ~/.steam/steam/steamapps/common)
-for name in $game_ids; do
+for name in $game_names; do
     bspc rule -a "$name" desktop='^5' state=tiled
 done
 

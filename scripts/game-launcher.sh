@@ -27,7 +27,7 @@ case $option in
         steam steam://rungameid/1061090
         ;;
     $lol)
-	python3 ~/Games/leagueoflegends/launch-league-of-legends.py
+	    python3 ~/Games/leagueoflegends/launch-league-of-legends.py
         ;;
     $hs)
         env LUTRIS_SKIP_INIT=1 lutris lutris:rungameid/4
