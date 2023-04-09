@@ -7,7 +7,7 @@ elif mpc status | grep -q playing; then
   current=$(mpc current | sed 's:.*/::' | grep -Po '.*(?=\.)' | awk '{print tolower($0)}')
   vol=$(mpc volume | grep "^volume" | cut -d " " -f 2)
   echo "$current" > ~/currentmpc.txt
-  echo "$current"
+  echo "$current $vol"
   #( zscroll -l 40 -d 0.2 -n t -b "$vol " "$current" ) &
 else
   echo "paused"
