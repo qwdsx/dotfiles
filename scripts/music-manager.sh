@@ -27,12 +27,12 @@ case $option in
     "update")
         playlist=$(yt-dlp $playlist_url --get-title --flat-playlist)
         echo "$playlist" > ${HOME}/scripts/playlist.txt
-        node ${HOME}/scripts/update-songs.js
+        node ${HOME}/scripts/music-manager-helper.js
         alacritty -e yt-dlp
+        rm ${HOME}/Music/qwdsx3/*.webm
 		mpc update
 		mpc clear
 		mpc add /
-        rm ${HOME}/Music/qwdsx3/*.webm
         dunstify -t 3000 "updated music library"
         ;;
 esac
