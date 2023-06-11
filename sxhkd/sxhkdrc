@@ -124,21 +124,21 @@ super + {v,h,space}
 #super + alt + {h,j,k,l}
 #	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 
-super + alt + h
-	bspc node -z right +20 0
-	bspc node -z left -20 0
+# super + alt + h
+# 	bspc node -z right +20 0
+# 	bspc node -z left -20 0
 
-super + alt + l
-	bspc node -z right -20 0
-	bspc node -z left +20 0
+# super + alt + l
+# 	bspc node -z right -20 0
+# 	bspc node -z left +20 0
 
-super + alt + j
-	bspc node -z top 0 -20
-	bspc node -z bottom 0 +20
+# super + alt + j
+# 	bspc node -z top 0 -20
+# 	bspc node -z bottom 0 +20
 
-super + alt + k
-	bspc node -z top 0 +20
-	bspc node -z bottom 0 -20
+# super + alt + k
+# 	bspc node -z top 0 +20
+# 	bspc node -z bottom 0 -20
 
 # contract a window by moving one of its side inward
 #super + alt + shift + {h,j,k,l}
@@ -185,6 +185,6 @@ super + shift + w
 super + g
 	${HOME}/scripts/game-launcher.sh
 
-# update dotfiles
-super + shift + u
-	${HOME}/scripts/dotfiles.sh
+# change kb layout
+super + alt + k
+	${HOME}/scripts/kb-layout.sh

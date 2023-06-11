@@ -16,7 +16,23 @@ local ensure_packer = function()
 	use 'nvim-lualine/lualine.nvim'
 	use 'nvim-tree/nvim-tree.lua'
 	use { 'catppuccin/nvim', as = 'catppuccin' }
+	use 'ribru17/bamboo.nvim'
+	use 'sainnhe/sonokai'
 	use 'norcalli/nvim-colorizer.lua'
+	use 'neovim/nvim-lspconfig'
+	use 'simrat39/rust-tools.nvim'
+	use 'williamboman/mason.nvim'
+    use 'williamboman/mason-lspconfig.nvim'
+	use 'hrsh7th/nvim-cmp' 
+    use 'hrsh7th/cmp-nvim-lsp'
+    use 'hrsh7th/cmp-nvim-lua'
+    use 'hrsh7th/cmp-nvim-lsp-signature-help'
+    use 'hrsh7th/cmp-vsnip'                             
+    use 'hrsh7th/cmp-path'                              
+    use 'hrsh7th/cmp-buffer'                            
+    use 'hrsh7th/vim-vsnip'
+	use 'voldikss/vim-floaterm'
+	use 'windwp/nvim-autopairs'
   
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

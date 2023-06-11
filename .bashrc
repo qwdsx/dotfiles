@@ -5,7 +5,7 @@
 # source aliases
 . ~/.aliases
 
-PATH="$HOME/scripts:$PATH"
+PATH="$HOME/scripts:$HOME/.cargo/bin:$PATH"
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return

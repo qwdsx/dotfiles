@@ -10,7 +10,6 @@ dfs=(
 	"flameshot"
 	"mpd"
 	"mpv"
-	"ncmpcpp"
 	"nvim"
 	"picom"
 	"polybar"

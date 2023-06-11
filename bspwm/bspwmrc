@@ -6,9 +6,9 @@
 # variables
 terminal="alacritty"
 editor="nvim"
-#monitor1=$(xrandr | grep "primary" | awk '{print $1}')
-#monitor2=$(xrandr | grep -w "connected" | awk '{i++}i==2' | awk '{print $1}')
-monitor1="DP-0"
+# monitor1=$(xrandr | grep "primary" | awk '{print $1}')
+# monitor2=$(xrandr | grep -w "connected" | awk '{i++}i==2' | awk '{print $1}')
+monitor1="DP-4"
 monitor2="HDMI-0"
 
 # auto exec
@@ -21,13 +21,12 @@ picom &
 ${HOME}/scripts/polybar.sh &
 ${HOME}/scripts/monitors.sh &
 xsetroot -cursor_name left_ptr
-#xset s off -dpms
+xset s off -dpms
 setxkbmap fi
 xrdb ~/.Xresources
 
-# pgrep -x ncmpcpp > /dev/null || $terminal --class ncmpcpp -e ncmpcpp &
 pgrep -x Discord > /dev/null || discord &
-pgrep -x obs > /dev/null || obs &
+# pgrep -x obs > /dev/null || obs &
 
 # desktops
 if [[ $HOSTNAME == "sharkcat" ]]; then

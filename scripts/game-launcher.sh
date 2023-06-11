@@ -13,8 +13,11 @@ apex="apex legends"
 jk="jump king"
 lol="league of legends"
 hs="hearthstone"
-mc="minecraft (speedrun)"
-games="$apex\n$hs\n$jk\n$lol\n$mc"
+mc="minecraft"
+mcsr="minecraft (speedrun)"
+rw="rain world"
+
+games="$apex\n$hs\n$jk\n$lol\n$mc\n$mcsr\n$rw"
 
 option=$(echo -e "$games" | rofi -i -dmenu -p "game launcher" -theme theme)
 [[ -z $option ]] && exit
@@ -35,7 +38,12 @@ case $option in
         env LUTRIS_SKIP_INIT=1 lutris lutris:rungameid/4
         ;;
     $mc)
+        minecraft-launcher
+        ;;
+    $mcsr)
         multimc &
-	    java -jar Downloads/Ninjabrain-Bot-1.3.2.jar
+	    java -jar Downloads/ninjabrainbot.jar
 	    ;;
+	$rw)
+		steam steam://rungameid/312520
 esac

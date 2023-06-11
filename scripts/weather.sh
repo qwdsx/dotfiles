@@ -1,6 +1,6 @@
 #!/bin/sh
 
-. "/home/lassi/.Xresources-colors"
+. "${HOME}/.Xresources-colors"
 
 weather=$(curl -s 'http://api.weatherapi.com/v1/current.json?key=b4d14cbd6e424b48a8242524221505&q=Oulu&aqi=no%27')
 
