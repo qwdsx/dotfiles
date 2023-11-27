@@ -188,3 +188,4 @@ super + g
 # change kb layout
 super + alt + k
 	${HOME}/scripts/kb-layout.sh
+

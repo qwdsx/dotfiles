@@ -12,6 +12,9 @@ monitor1="DP-4"
 monitor2="HDMI-0"
 
 # auto exec
+pgrep -x Discord > /dev/null || discord &
+pgrep -x steam > /dev/null || steam &
+# pgrep -x obs > /dev/null || obs &
 pgrep -x sxhkd > /dev/null || sxhkd &
 killall -9 dunst; pgrep -x dunst > /dev/null || dunst &
 pgrep -x solaar > /dev/null || solaar -w hide &
@@ -20,13 +23,11 @@ nm-applet &
 picom &
 ${HOME}/scripts/polybar.sh &
 ${HOME}/scripts/monitors.sh &
+fcitx5 &
 xsetroot -cursor_name left_ptr
 xset s off -dpms
-setxkbmap fi
+#setxkbmap fi
 xrdb ~/.Xresources
-
-pgrep -x Discord > /dev/null || discord &
-# pgrep -x obs > /dev/null || obs &
 
 # desktops
 if [[ $HOSTNAME == "sharkcat" ]]; then

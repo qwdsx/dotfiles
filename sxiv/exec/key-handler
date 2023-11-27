@@ -22,18 +22,21 @@ do
 		"w")
 			cp "$file" ~/wlp.png
 			feh --bg-fill ~/wlp.png &
-		;;
+			;;
 		"f")
 			sxiv -a -s f "$file" &
-		;;
+			;;
 		"c")
 			wal -i $file
-		;;
+			;;
 		"b")
 			cp "$file" ~/wlp2.png
 			convert -scale 10% -blur 0x1 -resize 100% ~/wlp2.png ~/wlp.png
 			feh --bg-fill ~/wlp.png &
-		;;
+			;;
+		"d")
+			rm "$file"
+			;;
 # "C-x")      xclip -in -filter | tr '\n' ' ' | xclip -in -selection clipboard ;;
 # "C-c")      while read file; do xclip -selection clipboard -target image/png "$file"; done ;;
 # "C-e")      while read file; do urxvt -bg "#444" -fg "#eee" -sl 0 -title "$file" -e sh -c "exiv2 pr -q -pa '$file' | less" & done ;;

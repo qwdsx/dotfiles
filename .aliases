@@ -10,9 +10,12 @@ alias cal='cal -mw'
 alias setsysc='sysctl -w abi.vsyscall32=0'
 alias pm='sudo pacman'
 alias lg='lazygit'
-alias l='exa -a'
+alias l='eza -a'
+alias mntusb='sudo mount /dev/sdc /mnt/usb1'
+alias mnthdd='sudo mount /dev/sdb2 /mnt/hdd1'
 alias sudo='sudo '
 
 function killcmd() {
 	killall -9 "$1"
 }
+

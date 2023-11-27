@@ -18,19 +18,19 @@ bspc rule -a "obs" desktop='^1'
 #
 
 floating=(
-    "Sxiv" 
-    "Steam" 
-    "steam" 
-    "Virt-manager" 
-    "scrcpy" 
-    "Thunar" 
-    "battle.net.exe" 
-    "leagueclientux.exe" 
-    "riotclientux.exe" 
+#     "Sxiv" 
+#     "Steam" 
+#     "steam" 
+#     "Virt-manager" 
+#     "scrcpy" 
+#     "Thunar" 
+#     "battle.net.exe" 
+#     "leagueclientux.exe" 
+#     "riotclientux.exe" 
     "zoom" 
-    "MultiMC" 
-    "ninjabrainbot-Main"
-    #"discord" 
+#     "MultiMC" 
+#     "ninjabrainbot-Main"
+#     #"discord" 
     )
 for float in ${floating[@]}; do
     bspc rule -a $float state=floating
@@ -48,8 +48,9 @@ games=(
     "leagueclientux.exe"
     "leagueclient.exe"
     "league of legends.exe" 
-    "growtopia.exe"
 	"lutris"
+	"Steam"
+	"steam"
     )
 for game in ${games[@]}; do
     bspc rule -a "$game" desktop='^5'
@@ -57,11 +58,6 @@ done
 
 game_ids=$(ls ~/.steam/steam/steamapps | grep appmanifest | sed 's/[^0-9]*//g')
 for id in $game_ids; do
-    bspc rule -a "steam_app_$id" desktop='^5' state=tiled
+    bspc rule -a "steam_app_$id" desktop='^5'
 done
-
-# game_names=$(ls ~/.steam/steam/steamapps/common)
-# for name in $game_names; do
-#     bspc rule -a "$name" desktop='^5' state=tiled
-# done
 

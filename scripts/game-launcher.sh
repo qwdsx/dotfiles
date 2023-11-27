@@ -16,8 +16,9 @@ hs="hearthstone"
 mc="minecraft"
 mcsr="minecraft (speedrun)"
 rw="rain world"
+gt="growtopia"
 
-games="$apex\n$hs\n$jk\n$lol\n$mc\n$mcsr\n$rw"
+games="$apex\n$gt\n$hs\n$jk\n$lol\n$mc\n$mcsr\n$rw"
 
 option=$(echo -e "$games" | rofi -i -dmenu -p "game launcher" -theme theme)
 [[ -z $option ]] && exit
@@ -30,9 +31,8 @@ case $option in
         steam steam://rungameid/1061090
         ;;
     $lol)
-        # leagueoflegends kill
-        # leagueoflegends start
-	    python3 ~/Games/leagueoflegends/launch-league-of-legends.py
+        leagueoflegends kill
+        leagueoflegends start
         ;;
     $hs)
         env LUTRIS_SKIP_INIT=1 lutris lutris:rungameid/4
@@ -46,4 +46,8 @@ case $option in
 	    ;;
 	$rw)
 		steam steam://rungameid/312520
+        ;;
+	$gt)
+		WINEPREFIX=~/Games/growtopia/ /home/lassi/Games/growtopia/drive_c/users/lassi/AppData/Local/Growtopia/Growtopia.exe
+		;;
 esac

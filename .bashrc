@@ -2,24 +2,21 @@
 # ~/.bashrc
 #
 
-# source aliases
-. ~/.aliases
+. $HOME/.aliases
+. $HOME/.env
 
-PATH="$HOME/scripts:$HOME/.cargo/bin:$PATH"
+PATH="$HOME/scripts:$HOME/.cargo/bin:/usr/bin/yt-dlp:$PATH"
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-function dynamic_ps1() {
-    pwd=$(pwd)
-    slash_count=$(awk -F/ '{print NF-1}' <<< "$pwd")
-    if [[ "$pwd" == "/home/lassi" || $slash_count == "1" ]]; then
-        PS1='\w > '
-    else
-        PS1='\e[01;101m\] \w \[\e[01;00m\]\[\e[01;91m\]  \[\e[01;00m\] '
-    fi
-}
-
-#PROMPT_COMMAND="dynamic_ps1"
 #PS1='\e[01;31m\]\w\[\e[01;33m\] >\[\e[01;00m\] '
 PS1='\w > '
+
+# pnpm
+export PNPM_HOME="/home/lassi/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
