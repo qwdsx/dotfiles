@@ -6,7 +6,7 @@ local o = vim.o
 
 o.termguicolors = true
 o.background = 'dark'
-vim.cmd([[ colorscheme sonokai ]])
+vim.cmd([[ colorscheme catppuccin ]])
 
 -- Do not save when switching buffers
 o.hidden = true
