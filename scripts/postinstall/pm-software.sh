@@ -26,6 +26,7 @@ pkgs=(
 	"git"
 	"ranger"
 	"thunar"
+	"pcmanfm"
 	"flameshot"
 	"exa"
 	"nvidia"

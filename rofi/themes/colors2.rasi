@@ -1,35 +1,30 @@
 * {
     foreground: #cccccc;
     backlight: #ccffeedd;
-    background-color: transparent;
+    background-color: #171717;
     background: #171717;
     foreground: #cccccc;
     dark: #333;
 
-    // normal
-        black:   #171717;
-        red:     #262626;
-        green:   #3b3b3b;
-        yellow:  #ffff99;
-        blue:    #99ecff;
-        magenta: #ce99ff;
-        cyan:    #99ffda;
-        white:   #cccccc;
-    
-    // bright
-        lightblack:   #ff1744;
-        tlightblack:  #ff1744fa;
-        lightred:     #ff9999;
-        lightgreen:   #c9ff99;
-        lightyellow:  #ffff99;
-        lightblue:    #99ecff;
-        lightmagenta: #ce99ff;
-        lightcyan:    #99ffda;  // comments
-        tcyan:        #cc99ffda;
-        lightwhite:   #cccccc;
+    color0: #171717;
+    color1: #ff9999;
+    color2: #b3ff99;
+    color3: #d9c98c;
+    color4: #8cadd9;
+    color5: #a78cd9;
+    color6: #8cd9c8;
+    color7: #cccccc;
+
+    color8:  #ff1744;
+    color9:  #212121;
+    color10: #363636;
+    color11: #4f4f4f;
+    color12: #707070;
+    color13: #999999;
+    color14: #99ffe9;
+    color15: #969696;
 
     highlight: underline bold #ffffff;
-
     transparent: rgba(0,0,0,0);
-    font: "mononoki 10";
+    font: "mononoki 11";
 }

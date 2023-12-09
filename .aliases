@@ -14,6 +14,7 @@ alias l='eza -a'
 alias mntusb='sudo mount /dev/sdc /mnt/usb1'
 alias mnthdd='sudo mount /dev/sdb2 /mnt/hdd1'
 alias sudo='sudo '
+alias chx='sudo chmod +x '
 
 function killcmd() {
 	killall -9 "$1"

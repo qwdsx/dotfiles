@@ -4,7 +4,7 @@ window {
     anchor: north;
     location: north;
     width: 100%;
-    height: 20px;
+    height: 30px;
     dynamic: false;
 	padding: 0px;
     transparency: "screenshot";
@@ -17,36 +17,22 @@ window {
 mainbox {
     spacing: 0;
     orientation: horizontal;
-    children: [ inputbar, message, listview ];
-}
-
-message {
-    border-color: @foreground;
-    border:  0px 2px 2px 2px;
-//    border-radius: 10px;
-    padding: 5;
-    background-color: @tcyan;
-}
-
-message {
-    font: @font;
-    color: @black;
+    children: [ inputbar, listview ];
 }
 
 inputbar {
-    color: @lightwhite;
-    padding: 2px;
+    color: @foreground;
+    padding: 5px;
     background-color: @black;
     border: 0px;
     border-radius: 0px;
     border-color: @foreground;
     font: @font;
 	expand: false;
-	//width: 10em;
-    width: 400px;
+    width: 200px;
 }
 
-entry,prompt,case-indicator {
+entry,prompt {
     text-font: inherit;
     text-color: inherit;
 }
@@ -65,13 +51,12 @@ listview {
 
 element {
     margin: 0px;
-    padding: 2px 10px;
+    padding: 6px 10px;
     vertical-align: 0;
-    // border: 2px;
-    // border-radius: 10px;
     background-color: transparent;
-    color: @foreground;
+    color: @color15;
     font:inherit;
+    height: 100%;
 }
 
 element-text {
@@ -80,82 +65,10 @@ element-text {
 }
 
 element selected.normal {
-    background-color: @red;
+    background-color: @color10;
+    color: @foreground;
 }
 
 element normal active {
-    foreground: @lightblue;
-}
-
-element normal urgent {
-    foreground: @lightred;
-}
-
-element alternate normal {
-}
-
-element alternate active {
-    foreground: @lightblue;
-}
-
-element alternate urgent {
-    foreground: @lightred;
-}
-
-element selected active {
-    background-color: @lightblue;
-    foreground: @dark;
-}
-
-element selected urgent {
-    background-color: @lightred;
-    foreground: @dark;
-}
-
-element normal normal {
-
-}
-
-/*
-vertb {
-    expand: false;
-    children: [ dummy0, mode-switcher, dummy1  ];
-}
-
-dummy0,  dummy1 {
-    expand: true;
-}
-
-mode-switcher {
-    expand: false;
-    orientation: vertical;
-    spacing: 0px;
-    border: 0px 0px 0px 0px;
-}
-
-button {
-    font: @font;
-    padding: 6px;
-    border: 2px 0px 2px 2px;
-    border-radius: 4px 0px 0px 4px;
-    background-color: @tlightblack;
-    border-color: @foreground;
-    color: @foreground;
-    horizontal-align: 0.5;
-}
-
-button selected normal {
-    color: @dark;
-    border: 2px 0px 2px 2px;
-    background-color: @backlight;
-    border-color: @foreground;
-}
-*/
-
-error-message {
-    expand: true;
-    background-color: red;
-    border-color: darkred;
-    border: 2px;
-    padding: 1em;
+    foreground: @color10;
 }

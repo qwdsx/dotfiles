@@ -17,10 +17,11 @@ mc="minecraft"
 mcsr="minecraft (speedrun)"
 rw="rain world"
 gt="growtopia"
+lc="lethal company"
 
-games="$apex\n$gt\n$hs\n$jk\n$lol\n$mc\n$mcsr\n$rw"
+games="$apex\n$gt\n$hs\n$jk\n$lc\n$lol\n$mc\n$mcsr\n$rw"
 
-option=$(echo -e "$games" | rofi -i -dmenu -p "game launcher" -theme theme)
+option=$(echo -e "$games" | rofi -i -dmenu -p " game launcher" -theme "with_prompt")
 [[ -z $option ]] && exit
 
 case $option in
@@ -49,5 +50,8 @@ case $option in
         ;;
 	$gt)
 		WINEPREFIX=~/Games/growtopia/ /home/lassi/Games/growtopia/drive_c/users/lassi/AppData/Local/Growtopia/Growtopia.exe
+		;;
+	$lc)
+		steam steam://rungameid/1966720
 		;;
 esac

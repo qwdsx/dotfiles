@@ -34,8 +34,11 @@ do
 			convert -scale 10% -blur 0x1 -resize 100% ~/wlp2.png ~/wlp.png
 			feh --bg-fill ~/wlp.png &
 			;;
-		"d")
+		"C-d")
 			rm "$file"
+			;;
+		"m")
+			mv "$file" "$HOME/ltr" 
 			;;
 # "C-x")      xclip -in -filter | tr '\n' ' ' | xclip -in -selection clipboard ;;
 # "C-c")      while read file; do xclip -selection clipboard -target image/png "$file"; done ;;

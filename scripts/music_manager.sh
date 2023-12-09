@@ -1,14 +1,17 @@
 #!/bin/sh
 
-rofi_theme="theme"
-playlist_url="https://www.youtube.com/playlist?list=PLuZPZXDmytnFez6pV1ZXpFMauG6bwH-uz"
+rofi_theme="without_prompt"
 
-option=$(echo -e "search\ndelete\nupdate" | rofi -i -dmenu -p "music manager" -theme $rofi_theme)
+search="search"
+delete="delete"
+update="update"
+
+option=$(echo -e "$search\n$delete\n$update" | rofi -i -dmenu -p " music manager" -theme $rofi_theme)
 [[ -z $option ]] && exit
 
 case $option in
-    "search")
-        song=$(ls ~/Music/x3/ | rofi -i -dmenu -p "search" -theme $rofi_theme)
+    "$search")
+        song=$(ls ~/Music/x3/ | rofi -i -dmenu -p "$search" -theme $rofi_theme)
         [[ -z "$song" ]] && exit
 
 		play=$(mpc searchplay filename "$song")
@@ -18,19 +21,18 @@ case $option in
 			dunstify -t 3000 "playing: $song"
 		fi
 		;;
-    "delete")
-        song=$(ls ~/Music/qwdsx3/ | rofi -i -dmenu -p "delete" -theme $rofi_theme)
+    "$delete")
+        song=$(ls ~/Music/qwdsx3/ | rofi -i -dmenu -p "$delete" -theme $rofi_theme)
         [[ -z $song ]] && exit
         rm ~/Music/qwdsx3/"$song"
         dunstify -t 3000 "deleted: $song"
         ;;
-    "update")
+    "$update")
         alacritty -e yt-dlp
         rm ${HOME}/Music/**/*.webm
         mpc update
 		mpc clear
 		mpc add /
         dunstify -t 3000 "updated music library"
-        ;;
+		;;
 esac
-

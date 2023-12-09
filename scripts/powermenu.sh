@@ -2,23 +2,16 @@
 # powermenu
 #
 
-echo_array() {
-    arr=("$@")
-    for i in "${arr[@]}"; do
-        echo "$i"
-    done
-}
+uptime=$(uptime -p | sed -e 's/up //g')
 
-rofi_theme="theme"
-
-logout="log out"
+log_out="log out"
 shutdown="shut down"
 reboot="reboot"
 lock="lock"
-fpb="kill wm :))))))"
-options="$logout\n$shutdown\n$reboot\n$lock\n$fpb"
+fpb="kill wm"
+options="$log_out\n$shutdown\n$reboot\n$lock\n$fpb"
 
-option=$(echo -e "$options" | rofi -i -dmenu -p "power menu" -theme $rofi_theme)
+option=$(echo -e "$options" | rofi -i -dmenu -p " uptime: $uptime" -theme "without_prompt")
 [[ -z $option ]] && exit
 
 case $option in
@@ -32,7 +25,7 @@ case $option in
         systemctl reboot
         ;;
     $lock)
-        ${HOME}/scripts/i3lock.sh
+        $HOME/scripts/i3lock.sh
         ;;
 	$fpb)
 		killall bspwm && killall bspwm

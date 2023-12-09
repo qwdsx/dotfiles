@@ -9,11 +9,11 @@ super + Return
 
 # program launcher
 super + d 
-	rofi -modi run,run -show run
+	rofi -modi run,run -show run -theme "theme3"
 
 # restart polybar
 super + shift + p
-	killall -9 polybar; ${HOME}/scripts/polybar.sh
+	killall -9 polybar; $HOME/scripts/polybar.sh
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -25,7 +25,7 @@ super + shift + r
 
 # powermenu
 super + shift + e
-	${HOME}/scripts/powermenu.sh
+	$HOME/scripts/powermenu.sh
 
 # close and kill
 # super + {_,shift + }w
@@ -157,7 +157,8 @@ XF86Audio{Raise,Lower}Volume
 	pactl set-sink-volume 0 {+5%,-5%}
 XF86AudioMute
 	pactl set-sink-mute 0 toggle
-
+super + shift + m
+	pactl set-source-mute @DEFAULT_SOURCE@ toggle
 # cmus controls
 # super + alt + {q,a,w,s,z,x,c,v}
 # 	cmus-remote {--volume +5,--volume -5,--seek +5,--seek -5,--prev,--play,--pause,--next}
@@ -167,7 +168,7 @@ super + alt + {q,a,w,s,z,x,c,v,b}
 	mpc {volume +5,volume -5,seek +5,seek -5,prev,play,toggle,next,current}
 
 super + alt + d
-	${HOME}/scripts/music-manager.sh
+	$HOME/scripts/music_manager.sh
 
 #
 # hotkeys for other stuff
@@ -179,13 +180,13 @@ super + Print
 
 # sxiv open ~/wlp in thumbnail mode
 super + shift + w
-	sxiv -t -s f ~/wlp/
+	sxiv -t -s f $HOME/wlp
 
 # game menu
 super + g
-	${HOME}/scripts/game-launcher.sh
+	$HOME/scripts/game_launcher.sh
 
 # change kb layout
 super + alt + k
-	${HOME}/scripts/kb-layout.sh
+	$HOME/scripts/kb_layout.sh
 

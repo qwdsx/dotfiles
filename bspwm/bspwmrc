@@ -12,8 +12,8 @@ monitor1="DP-4"
 monitor2="HDMI-0"
 
 # auto exec
-pgrep -x Discord > /dev/null || discord &
-pgrep -x steam > /dev/null || steam &
+pgrep -x Discord > /dev/null || discord --disable-smooth-scrolling &
+#pgrep -x steam > /dev/null || steam &
 # pgrep -x obs > /dev/null || obs &
 pgrep -x sxhkd > /dev/null || sxhkd &
 killall -9 dunst; pgrep -x dunst > /dev/null || dunst &

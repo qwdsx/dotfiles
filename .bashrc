@@ -3,7 +3,7 @@
 #
 
 . $HOME/.aliases
-. $HOME/.env
+# . $HOME/.env
 
 PATH="$HOME/scripts:$HOME/.cargo/bin:/usr/bin/yt-dlp:$PATH"
 
@@ -20,3 +20,4 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+. "$HOME/.cargo/env"

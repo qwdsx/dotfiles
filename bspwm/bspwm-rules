@@ -49,8 +49,8 @@ games=(
     "leagueclient.exe"
     "league of legends.exe" 
 	"lutris"
-	"Steam"
-	"steam"
+	#"Steam"
+	#"steam"
     )
 for game in ${games[@]}; do
     bspc rule -a "$game" desktop='^5'
