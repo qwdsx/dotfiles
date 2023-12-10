@@ -13,7 +13,7 @@ elif mpc status | grep -q playing; then
   # echo "$vol $current"
   ( zscroll -l 30 -d 0.2 -n t -b "$last_item " "$current" ) &
 else
-  echo " paused"
+  echo "paused"
 fi
 
 # Block until an event is emitted

@@ -1,62 +1,80 @@
 
 pkgs=(
+
+	# essentials
 	"xorg"
 	"xorg-server"
-	"discord"
-	"grub"
 	"efibootmgr"
 	"dialog"
 	"mtools"
 	"dosfstools"
 	"base-devel"
-	"bspwm"
-	"sxhkd"
+	"grub"
+	"nvidia"
+	"lib32-nvidia-utils"
+	"networkmanager"
+	"network-manager-applet"
+	"picom"
+	"dhcpcd"
+
+	# terminal
 	"alacritty"
 	"feh"
 	"sxiv"
 	"neovim"
 	"firefox"
 	"qutebrowser"
+
+	# media
 	"mpv"
 	"mpd"
 	"mpc"
+
+	"discord"
+	
+	# wm and keyboard shortcuts
+	"bspwm"
+	"sxhkd"
+
+	# audio
 	"pipewire"
 	"pipewire-pulse"
-	"rofi"
-	"git"
-	"ranger"
-	"thunar"
-	"pcmanfm"
-	"flameshot"
-	"exa"
-	"nvidia"
-	"lib32-nvidia-utils"
-	"dialog"
-	"networkmanager"
-	"network-manager-applet"
+
+	# development
 	"jq"
-	"curl"
-	"wget"
-	"btop"
 	"nodejs"
 	"npm"
 	"gcc"
-	"python"
-	"lazygit"
-	"dhcpcd"
-	"ffmpeg"
-	"convert"
 	"lua"
-	"dunst"
-	"reflector"
-	"obs-studio"
+	"python"
+
+	# git
+	"git"
+	"lazygit"
+
+	# fonts
 	"noto-fonts"
 	"noto-fonts-cjk"
 	"noto-fonts-emoji"
 	"noto-fonts-extra"
-	"picom"
+	"ttf-nerd-fonts-symbols"
+
+	# virtual manager
 	"virt-manager"
 	"dnsmasq"
+
+	# other
+	"rofi"
+	"flameshot"
+	"exa"
+	"curl"
+	"wget"
+	"btop"
+	"ffmpeg"
+	"convert"
+	"dunst"
+	"reflector"
+	"obs-studio"
 	"solaar"
 )
 

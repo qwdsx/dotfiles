@@ -9,9 +9,10 @@ shutdown="shut down"
 reboot="reboot"
 lock="lock"
 fpb="kill wm"
-options="$log_out\n$shutdown\n$reboot\n$lock\n$fpb"
+kpb="kill polybar"
+options="$log_out\n$shutdown\n$reboot\n$lock\n$fpb\n$kpb"
 
-option=$(echo -e "$options" | rofi -i -dmenu -p " uptime: $uptime" -theme "without_prompt")
+option=$(echo -e "$options" | rofi -i -dmenu -p " uptime: $uptime" -theme "without_prompt")
 [[ -z $option ]] && exit
 
 case $option in
@@ -30,4 +31,10 @@ case $option in
 	$fpb)
 		killall bspwm && killall bspwm
 		;;
+    $kpb)
+		killall -9 polybar
+		;;
+    $rb)
+        bspc wm -r
+        ;;
 esac

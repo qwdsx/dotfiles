@@ -18,10 +18,11 @@ mcsr="minecraft (speedrun)"
 rw="rain world"
 gt="growtopia"
 lc="lethal company"
+gi="genshin impact"
 
-games="$apex\n$gt\n$hs\n$jk\n$lc\n$lol\n$mc\n$mcsr\n$rw"
+games="$apex\n$gt\n$hs\n$jk\n$lc\n$lol\n$mc\n$mcsr\n$rw\n$gi"
 
-option=$(echo -e "$games" | rofi -i -dmenu -p " game launcher" -theme "with_prompt")
+option=$(echo -e "$games" | sort | rofi -i -dmenu -p " game launcher" -theme "with_prompt")
 [[ -z $option ]] && exit
 
 case $option in
@@ -53,5 +54,10 @@ case $option in
 		;;
 	$lc)
 		steam steam://rungameid/1966720
+		;;
+	$gi)
+		pgrep -x wineserver && killall -9 wineserver
+		WINEPREFIX=/home/lassi/Games/genshin \
+		/home/lassi/Games/genshin/lutris-GE-Proton8-25-x86_64/bin/wine "/home/lassi/Games/genshin-impact/drive_c/Program Files/Genshin Impact/Genshin Impact game/GenshinImpact.exe"
 		;;
 esac
