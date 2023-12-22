@@ -7,7 +7,7 @@ ARR_IN=(${IN// / })
 LAST_ITEM=${ARR_IN[-1]}
 
 if [[ "$LAST_ITEM" = "yes" ]]; then
-	echo "%{F$COLOR1}󰍭%{F-}"
+	echo "󰍭"
 else
-	echo "%{F$COLOR15}󰍬%{F-}"
+	echo "󰍬"
 fi

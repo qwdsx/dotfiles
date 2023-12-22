@@ -4,9 +4,9 @@ local o = vim.o
 -- cmd('syntax on')
 -- vim.api.nvim_command('filetype plugin indent on')
 
-o.termguicolors = true
+o.termguicolors = false
 o.background = 'dark'
-vim.cmd([[ colorscheme catppuccin ]])
+vim.cmd('colorscheme horizon')
 
 -- Do not save when switching buffers
 o.hidden = true

@@ -15,6 +15,7 @@ alias mntusb='sudo mount /dev/sdc /mnt/usb1'
 alias mnthdd='sudo mount /dev/sdb2 /mnt/hdd1'
 alias sudo='sudo '
 alias chx='sudo chmod +x '
+alias dropc='echo 3 | sudo tee /proc/sys/vm/drop_caches'
 
 function killcmd() {
 	killall -9 "$1"

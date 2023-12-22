@@ -10,8 +10,8 @@ elif mpc status | grep -q playing; then
   last_item=${arr_in[-1]}
 
   echo "$current" > ~/currentmpc.txt
-  # echo "$vol $current"
-  ( zscroll -l 30 -d 0.2 -n t -b "$last_item " "$current" ) &
+  echo "$vol $current"
+  #( zscroll -l 30 -d 0.2 -n t -b "$last_item " "$current" ) &
 else
   echo "paused"
 fi

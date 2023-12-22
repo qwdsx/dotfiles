@@ -4,4 +4,4 @@
 --audio-quality "0"
 --hls-prefer-ffmpeg
 --yes-playlist
--o "${HOME}/Music/%(playlist)s/%(title)s.%(ext)s" https://www.youtube.com/playlist?list=PLuZPZXDmytnGS95UY_Zm9vNYrKUpSdsF3 
+-o "${HOME}/music/%(playlist)s/%(title)s.%(ext)s" https://www.youtube.com/playlist?list=PLuZPZXDmytnGS95UY_Zm9vNYrKUpSdsF3 

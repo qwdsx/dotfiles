@@ -1,17 +1,18 @@
 #!/bin/sh
 
-rofi_theme="without_prompt"
+rofi_theme="with_prompt"
+music_folder="$HOME/music/x3"
 
 search="search"
 delete="delete"
 update="update"
 
-option=$(echo -e "$search\n$delete\n$update" | rofi -i -dmenu -p " music manager" -theme $rofi_theme)
+option=$(echo -e "$search\n$delete\n$update" | rofi -i -dmenu -p "󰝚 music manager" -theme $rofi_theme)
 [[ -z $option ]] && exit
 
 case $option in
     "$search")
-        song=$(ls ~/Music/x3/ | rofi -i -dmenu -p "$search" -theme $rofi_theme)
+        song=$(ls $music_folder | rofi -i -dmenu -p "$search" -theme $rofi_theme)
         [[ -z "$song" ]] && exit
 
 		play=$(mpc searchplay filename "$song")
@@ -22,14 +23,14 @@ case $option in
 		fi
 		;;
     "$delete")
-        song=$(ls ~/Music/qwdsx3/ | rofi -i -dmenu -p "$delete" -theme $rofi_theme)
+        song=$(ls $music_folder | rofi -i -dmenu -p "$delete" -theme $rofi_theme)
         [[ -z $song ]] && exit
-        rm ~/Music/qwdsx3/"$song"
+        rm $HOME/"$song"
         dunstify -t 3000 "deleted: $song"
         ;;
     "$update")
         alacritty -e yt-dlp
-        rm ${HOME}/Music/**/*.webm
+        rm ${HOME}/music/**/*.webm
         mpc update
 		mpc clear
 		mpc add /

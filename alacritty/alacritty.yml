@@ -10,7 +10,7 @@
 # All imports must either be absolute paths starting with `/`, or paths relative
 # to the user's home directory starting with `~/`.
 import:
-  - ${HOME}/.config/alacritty/alacritty.yml
+  - $HOME/.config/alacritty/alacritty.yml
 
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
@@ -24,9 +24,10 @@ env:
   # available, otherwise `xterm-256color` is used.
   #TERM: alacritty
   LC_ALL: "en_US.UTF-8"
+  TERM: xterm-256color
 
 window:
-  opacity: 0.95
+  opacity: 1
   # Window dimensions (changes require restart)
   #
   # Number of lines/columns (not pixels) in the terminal. The number of columns
@@ -118,166 +119,75 @@ draw_bold_text_with_bright_colors: false
 schemes:
   colors: &colors
     primary:
-      background: '#171717'
+      background: '#1c1e26'
       foreground: '#cccccc'
     normal:
-      black:   '#171717'
-      red:     '#81cb98'
-      green:   '#333333'
-      yellow:  '#a37768'
-      blue:    '#8481cb'
-      magenta: '#267370'
-      cyan:    '#a3978b'
-      white:   '#cccccc'
+      black:   '#1c1e26'
+      red:     '#F43E5C'
+      green:   '#09F7A0'
+      yellow:  '#F09383'
+      blue:    '#25B2BC'
+      magenta: '#6C6F93'
+      cyan:    '#E95678'
+      white:   '#1A1C23'
     bright:
-      black:   '#ffaaaa'
-      red:     '#262626'
-      green:   '#333333'
-      yellow:  '#a37768'
-      blue:    '#8481cb'
-      magenta: '#267370'
-      cyan:    '#a3978b' # comments
-      white:   '#cccccc'
+      black:   '#1c1e26'
+      red:     '#F43E5C'
+      green:   '#09F7A0'
+      yellow:  '#F09383'
+      blue:    '#25B2BC'
+      magenta: '#6C6F93'
+      cyan:    '#E95678'
+      white:   '#1A1C23'
 
-  colors1: &colors1
-    primary:
-      background: '#1c1c1c'
-      foreground: '#ddccbb'
-    normal:
-      black:   '#1c1c1c'
-      red:     '#e193c0'
-      green:   '#71c3a0'
-      yellow:  '#f0c674'
-      blue:    '#8481cb'
-      magenta: '#b6aeda'
-      cyan:    '#d5c5ed'
-      white:   '#ddccbb'
-    bright:
-      black:   '#1c1c1c'
-      red:     '#e193c0'
-      green:   '#71c3a0'
-      yellow:  '#f0c674'
-      blue:    '#8481cb'
-      magenta: '#b6aeda'
-      cyan:    '#d5c5ed'
-      white:   '#ddccbb'
-
-  colors2: &colors2
-    primary:
-      background: '#1c1c1c'
-      foreground: '#c2c2b0'
-    normal:
-      black:   '#1c1c1c'
-      red:     '#5F8787'
-      green:   '#424242'
-      yellow:  '#666666'
-      blue:    '#808080'
-      magenta: '#a8a8a8'
-      cyan:    '#cccccc'
-      white:   '#c2c2b0'
-    bright:
-      black:   '#262626'
-      red:     '#5F8787'
-      green:   '#424242'
-      yellow:  '#666666'
-      blue:    '#808080'
-      magenta: '#a8a8a8'
-      cyan:    '#cccccc'
-      white:   '#c2c2b0'
-
-  colors3: &colors3
-    primary:
-      background: '#171717'
-      foreground: '#cccccc'
-    normal:
-      black:   '#1c1c1c'
-      red:     '#5F8787'
-      green:   '#969696'
-      yellow:  '#a37768'
-      blue:    '#8481cb'
-      magenta: '#267370'
-      cyan:    '#a3978b'
-      white:   '#c2c2b0'
-    bright:
-      black:   '#262626'
-      red:     '#5F8787'
-      green:   '#969696'
-      yellow:  '#a37768'
-      blue:    '#8481cb'
-      magenta: '#267370'
-      cyan:    '#a3978b'
-      white:   '#c2c2b0'
-
-  colors: &colors4
-    primary:
-      background: '#171717'
-      foreground: '#cccccc'
-    normal:
-      black:   '#171717'
-      red:     '#262626'
-      green:   '#969696'
-      yellow:  '#ffeb99'
-      blue:    '#99c5ff'
-      magenta: '#bd99ff'
-      cyan:    '#99ffe9'
-      white:   '#cccccc'
-    bright:
-      black:   '#ff1744'
-      red:     '#ff9999'
-      green:   '#b3ff99'
-      yellow:  '#ffeb99'
-      blue:    '#99c5ff'
-      magenta: '#bd99ff'
-      cyan:    '#99ffe9' # comments
-      white:   '#cccccc'
-
-  colors: &colors5
-    primary:
-      background: '#171717'
-      foreground: '#cccccc'
-    normal:
-      black:   '#171717'
-      red:     '#262626'
-      green:   '#3b3b3b'
-      yellow:  '#d9c98c'
-      blue:    '#8cadd9'
-      magenta: '#a78cd9'
-      cyan:    '#8cd9c8'
-      white:   '#969696'
-    bright:
-      black:   '#ff1744'
-      red:     '#ff9999'
-      green:   '#b3ff99'
-      yellow:  '#ffeb99'
-      blue:    '#99c5ff'
-      magenta: '#bd99ff'
-      cyan:    '#99ffe9' # comments
-      white:   '#cccccc'
     
-    colors: &colors6
-    primary:
-      background: '#171717'
-      foreground: '#cccccc'
-    normal:
-      black:   '#171717'
-      red:     '#d98c8c'
-      green:   '#9fd98c'
-      yellow:  '#d9c98c'
-      blue:    '#8cadd9'
-      magenta: '#a78cd9'
-      cyan:    '#8cd9c8'
-      white:   '#969696'
-    bright:
-      black:   '#ff1744'
-      red:     '#212121'
-      green:   '#363636'
-      yellow:  '#4f4f4f'
-      blue:    '#707070'
-      magenta: '#999999'
-      cyan:    '#99ffe9' # comments
-      white:   '#cccccc'
+    colors: &colors1
+      primary:
+        background: '#171717'
+        foreground: '#cccccc'
+      normal:
+        black:   '#171717'
+        red:     '#d98c8c'
+        green:   '#9fd98c'
+        yellow:  '#d9c98c'
+        blue:    '#8cadd9'
+        magenta: '#a78cd9'
+        cyan:    '#8cd9c8'
+        white:   '#969696'
+      bright:
+        black:   '#ff1744'
+        red:     '#212121'
+        green:   '#363636'
+        yellow:  '#4f4f4f'
+        blue:    '#707070'
+        magenta: '#999999'
+        cyan:    '#99ffe9' # comments
+        white:   '#cccccc'
 
-colors: *colors5
+    colors: &colors3
+      primary:
+        background: '#1c1e26'
+        foreground: '0xe0e0e0'
+      normal:
+        black: '#1c1e26'
+        red: '0xe95678'
+        green: '0x29d398'
+        yellow: '0xfab795'
+        blue: '0x26bbd9'
+        magenta: '0xee64ac'
+        cyan: '0x59e1e3'
+        white: '0xd5d8da'
+      bright:
+        black: '0x5b5858'
+        red: '0xec6a88'
+        green: '0x3fdaa4'
+        yellow: '0xfbc3a7'
+        blue: '0x3fc4de'
+        magenta: '0xf075b5'
+        cyan: '0x6be4e6'
+        white: '0xd5d8da'
+
+colors: *colors
   # Default colors
     # Bright and dim foreground colors
     #

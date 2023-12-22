@@ -9,6 +9,8 @@ echo_array() {
     done
 }
 
+rofi_theme="with_prompt"
+
 apex="apex legends"
 jk="jump king"
 lol="league of legends"
@@ -22,7 +24,7 @@ gi="genshin impact"
 
 games="$apex\n$gt\n$hs\n$jk\n$lc\n$lol\n$mc\n$mcsr\n$rw\n$gi"
 
-option=$(echo -e "$games" | sort | rofi -i -dmenu -p " game launcher" -theme "with_prompt")
+option=$(echo -e "$games" | sort | rofi -i -dmenu -p " game launcher" -theme $rofi_theme)
 [[ -z $option ]] && exit
 
 case $option in
@@ -56,8 +58,23 @@ case $option in
 		steam steam://rungameid/1966720
 		;;
 	$gi)
-		pgrep -x wineserver && killall -9 wineserver
-		WINEPREFIX=/home/lassi/Games/genshin \
-		/home/lassi/Games/genshin/lutris-GE-Proton8-25-x86_64/bin/wine "/home/lassi/Games/genshin-impact/drive_c/Program Files/Genshin Impact/Genshin Impact game/GenshinImpact.exe"
+		options="game\nupdate"
+		option=$(echo -e "$options" | sort | rofi -i -dmenu -p "genshin launcher" -theme $rofi_theme)
+		[[ -z $option ]] && exit
+		
+		case $option in
+			"game")
+				pgrep -x wineserver && killall -9 wineserver
+				WINEPREFIX=/home/lassi/Games/genshin \
+        		DXVK_HUG="fps,frametimes" \
+				/home/lassi/Games/genshin/lutris-GE-Proton8-25-x86_64/bin/wine "/home/lassi/Games/genshin/drive_c/Program Files/Genshin Impact/Genshin Impact game/GenshinImpact.exe"
+				;;
+			"update")
+				pgrep -x wineserver && killall -9 wineserver
+				WINEPREFIX=/home/lassi/Games/genshin \
+        		DXVK_HUG="fps,frametimes" \
+				/home/lassi/Games/genshin/lutris-GE-Proton8-25-x86_64/bin/wine "/home/lassi/Games/genshin/drive_c/Program Files/Genshin Impact/launcher.exe"
+				;;
+		esac
 		;;
 esac
