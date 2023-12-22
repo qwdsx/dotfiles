@@ -112,7 +112,7 @@ _G.packer_plugins = {
   ["horizon.nvim"] = {
     loaded = true,
     path = "/home/lassi/.local/share/nvim/site/pack/packer/start/horizon.nvim",
-    url = "https://github.com/lunarvim/horizon.nvim"
+    url = "https://github.com/akinsho/horizon.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,

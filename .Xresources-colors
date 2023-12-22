@@ -2,63 +2,64 @@ FOREGROUND=#cccccc
 BACKGROUND=#1c1e26
 
 COLOR0=#1c1e26
-COLOR1=#6C6F93
-COLOR2=#F43E5C
-COLOR3=#09F7A0
+COLOR1=#E95678
+COLOR2=#09F7A0
+COLOR3=#F09383
 COLOR4=#25B2BC
-COLOR5=#F09383
-COLOR6=#E95678
-COLOR7=#1A1C23
+COLOR5=#6c6f93
+COLOR6=#f43e5c
+COLOR7=#cccccc
 
 COLOR8=#1c1e26
-COLOR9=#6C6F93
-COLOR10=#F43E5C
-COLOR11=#09F7A0
+COLOR9=#E95678
+COLOR10=#09F7A0
+COLOR11=#F09383
 COLOR12=#25B2BC
-COLOR13=#F09383
-COLOR14=#E95678
-COLOR15=#1A1C23
-
-#define FOREGROUND #cccccc
-#define BACKGROUND #171717
-
-#define COLOR0  #171717
-#define COLOR1  #ff9999
-#define COLOR2  #b3ff99
-#define COLOR3  #d9c98c
-#define COLOR4  #8cadd9
-#define COLOR5  #a78cd9
-#define COLOR6  #8cd9c8
-#define COLOR7  #cccccc
-
-#define COLOR8  #ff1744
-#define COLOR9  #212121
-#define COLOR10 #363636
-#define COLOR11 #4f4f4f
-#define COLOR12 #707070
-#define COLOR13 #999999
-#define COLOR14 #99ffe9
-#define COLOR15 #969696
+COLOR13=#6c6f93
+COLOR14=#f43e5c
+COLOR15=#cccccc
 
 #define FOREGROUND #cccccc
 #define BACKGROUND #1c1e26
 
 #define COLOR0 #1c1e26
-#define COLOR1 #6C6F93
-#define COLOR2 #F43E5C
-#define COLOR3 #09F7A0
+#define COLOR1 #E95678
+#define COLOR2 #09F7A0
+#define COLOR3 #F09383
 #define COLOR4 #25B2BC
-#define COLOR5 #F09383
-#define COLOR6 #E95678
-#define COLOR7 #1A1C23
+#define COLOR5 #6c6f93
+#define COLOR6 #f43e5c
+#define COLOR7 #cccccc
 
 #define COLOR8 #1c1e26
-#define COLOR9 #6C6F93
-#define COLOR10 #F43E5C
-#define COLOR11 #09F7A0
+#define COLOR9 #E95678
+#define COLOR10 #09F7A0
+#define COLOR11 #F09383
 #define COLOR12 #25B2BC
-#define COLOR13 #F09383
-#define COLOR14 #E95678
-#define COLOR15 #1A1C23
+#define COLOR13 #6c6f93
+#define COLOR14 #f43e5c
+#define COLOR15 #cccccc
+
+! #define FOREGROUND #cccccc
+! #define BACKGROUND #1c1e26
+
+! #define COLOR0 #1c1e26
+! #define COLOR1 #E95678
+! #define COLOR2 #09F7A0
+! #define COLOR3 #F09383
+! #define COLOR4 #84baf0
+! #define COLOR5 #ba84f0
+! #define COLOR6 #f43e5c
+! #define COLOR7 #cccccc
+
+! #define COLOR8 #1c1e26
+! #define COLOR9 #E95678
+! #define COLOR10 #09F7A0
+! #define COLOR11 #F09383
+! #define COLOR12 #84baf0
+! #define COLOR13 #ba84f0
+! #define COLOR14 #f43e5c
+! #define COLOR15 #cccccc
+
 
 

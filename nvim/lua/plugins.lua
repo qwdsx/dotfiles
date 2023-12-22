@@ -16,7 +16,8 @@ local ensure_packer = function()
 	use 'nvim-lualine/lualine.nvim'
 	use 'nvim-tree/nvim-tree.lua'
 	use { 'catppuccin/nvim', as = 'catppuccin' }
-	use 'lunarvim/horizon.nvim'
+	-- use 'lunarvim/horizon.nvim'
+	use 'akinsho/horizon.nvim'
 	use 'norcalli/nvim-colorizer.lua'
 	use 'neovim/nvim-lspconfig'
 	use 'simrat39/rust-tools.nvim'

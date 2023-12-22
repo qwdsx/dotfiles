@@ -24,7 +24,7 @@ env:
   # available, otherwise `xterm-256color` is used.
   #TERM: alacritty
   LC_ALL: "en_US.UTF-8"
-  TERM: xterm-256color
+  TERM: "alacritty"
 
 window:
   opacity: 1
@@ -109,7 +109,7 @@ window:
 font:
   normal:
     family: mononoki
-  size: 11
+  size: 13
   offset:
     x: 0
     y: 0
@@ -129,7 +129,8 @@ schemes:
       blue:    '#25B2BC'
       magenta: '#6C6F93'
       cyan:    '#E95678'
-      white:   '#1A1C23'
+      white:   '#cccccc'
+      # white:   '#1A1C23'
     bright:
       black:   '#1c1e26'
       red:     '#F43E5C'
@@ -138,7 +139,8 @@ schemes:
       blue:    '#25B2BC'
       magenta: '#6C6F93'
       cyan:    '#E95678'
-      white:   '#1A1C23'
+      white:   '#cccccc'
+      # white:   '#1A1C23'
 
     
     colors: &colors1

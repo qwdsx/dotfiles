@@ -13,6 +13,8 @@ pkgs=(
 	"llpp"
 	"vscodium"
 	"uim"
+	"vscode-langservers-extracted"
+	"ncpamixer"
 )
 
 for pkg in "${pkgs[@]}"; do
