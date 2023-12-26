@@ -7,6 +7,8 @@ local o = vim.o
 o.termguicolors = false
 o.background = 'dark'
 vim.cmd('colorscheme horizon')
+vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
+vim.cmd('hi NvimTreeNormal guibg=NONE ctermbg=NONE')
 
 -- Do not save when switching buffers
 o.hidden = true

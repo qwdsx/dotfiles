@@ -11,18 +11,18 @@ bspc rule -a *:cmus desktop='^3'
 bspc rule -a obs desktop='^0'
 bspc rule -a zoom border=off
 bspc rule -a "obs" desktop='^1'
-bspc rule -a ArmCord desktop='^3'
+
 #
 # floating windows
 #
 
 floating=(
-#     "Sxiv" 
+     "Sxiv" 
 #     "Steam" 
 #     "steam" 
 #     "Virt-manager" 
 #     "scrcpy" 
-#     "Thunar" 
+     "Thunar" 
 #     "battle.net.exe" 
 #     "leagueclientux.exe" 
 #     "riotclientux.exe" 
@@ -61,4 +61,4 @@ for id in $game_ids; do
     bspc rule -a "steam_app_$id" desktop='^5'
 done
 
-bspc rule -a genshinimpact.exe state=fullscreen
+bspc rule -a "genshinimpact.exe" state=fullscreen 

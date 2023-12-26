@@ -16,7 +16,6 @@ local ensure_packer = function()
 	use 'nvim-lualine/lualine.nvim'
 	use 'nvim-tree/nvim-tree.lua'
 	use { 'catppuccin/nvim', as = 'catppuccin' }
-	-- use 'lunarvim/horizon.nvim'
 	use 'akinsho/horizon.nvim'
 	use 'norcalli/nvim-colorizer.lua'
 	use 'neovim/nvim-lspconfig'
@@ -33,6 +32,7 @@ local ensure_packer = function()
     use 'hrsh7th/vim-vsnip'
 	use 'voldikss/vim-floaterm'
 	use 'windwp/nvim-autopairs'
+	-- use 'xiyaowong/transparent.nvim'
   
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

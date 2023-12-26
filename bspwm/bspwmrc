@@ -21,9 +21,9 @@ dunstctl set-paused true
 #pgrep -x solaar > /dev/null || solaar -w hide &
 feh --bg-fill ~/wlp.png &
 nm-applet &
-picom &
-$HOME/scripts/polybar.sh &
+picom --daemon &
 $HOME/scripts/monitors.sh &
+$HOME/scripts/polybar.sh &
 #$HOME/scipts/bspwm_ignore_new_window.sh &
 #fcitx5 &
 xsetroot -cursor_name left_ptr
