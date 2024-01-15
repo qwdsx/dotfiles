@@ -1,0 +1,75 @@
+import = ["$HOME/.config/alacritty/alacritty.yml"]
+
+[colors]
+draw_bold_text_with_bright_colors = false
+
+[colors.normal]
+black = "#1c1e26"
+red = "#F43E5C"
+green = "#09F7A0"
+yellow = "#F09383"
+blue = "#5689e9"
+magenta = "#8756e9"
+cyan = "#56e7e9"
+white = "#cccccc"
+
+[colors.bright]
+black = "#1c1e26"
+red = "#F43E5C"
+green = "#09F7A0"
+yellow = "#F09383"
+blue = "#5689e9"
+magenta = "#6C6F93"
+cyan = "#56e7e9"
+white = "#cccccc"
+
+[colors.primary]
+background = "#1c1e26"
+foreground = "#cccccc"
+
+[env]
+LC_ALL = "en_US.UTF-8"
+TERM = "alacritty"
+
+[font]
+size = 13
+
+[font.normal]
+family = "mononoki"
+
+[font.offset]
+x = 0
+y = 0
+
+#[schemes.colors.bright]
+#black = "#1c1e26"
+#blue = "#25B2BC"
+#cyan = "#E95678"
+#green = "#09F7A0"
+#magenta = "#6C6F93"
+#red = "#F43E5C"
+#white = "#cccccc"
+#yellow = "#F09383"
+#
+#[schemes.colors.normal]
+#black = "#1c1e26"
+#blue = "#25B2BC"
+#cyan = "#E95678"
+#green = "#09F7A0"
+#magenta = "#6C6F93"
+#red = "#F43E5C"
+#white = "#cccccc"
+#yellow = "#F09383"
+#
+#[schemes.colors.primary]
+#background = "#1c1e26"
+#foreground = "#cccccc"
+
+[window]
+decorations = "none"
+dynamic_padding = true
+opacity = 1
+
+[window.padding]
+x = 20
+y = 20

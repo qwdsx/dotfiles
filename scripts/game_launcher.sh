@@ -35,9 +35,9 @@ case $option in
         steam steam://rungameid/1061090
         ;;
     $lol)
-        # leagueoflegends kill
-        # leagueoflegends start
-        WINEDEBUG=-all WINEPREFIX=/home/lassi/.local/share/leagueoflegends/ /home/lassi/Downloads/lutris-GE-Proton8-27-LoL-x86_64/bin/wine "/home/lassi/.local/share/leagueoflegends/drive_c/Riot Games/League of Legends/LeagueClient.exe"
+        leagueoflegends kill
+        leagueoflegends start
+        # WINEDEBUG=-all WINEPREFIX=/home/lassi/.local/share/leagueoflegends/ /home/lassi/Downloads/lutris-GE-Proton8-27-LoL-x86_64/bin/wine "/home/lassi/.local/share/leagueoflegends/drive_c/Riot Games/League of Legends/LeagueClient.exe"
 		;;
     $hs)
         env LUTRIS_SKIP_INIT=1 lutris lutris:rungameid/4

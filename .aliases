@@ -17,7 +17,8 @@ alias sudo='sudo '
 alias chx='sudo chmod +x '
 alias dropc='echo 3 | sudo tee /proc/sys/vm/drop_caches'
 
+alias fate='$HOME/dev/rust/fate/target/debug/fate'
+
 function killcmd() {
 	killall -9 "$1"
 }
-

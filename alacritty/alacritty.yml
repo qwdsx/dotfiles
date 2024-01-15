@@ -141,54 +141,6 @@ schemes:
       cyan:    '#E95678'
       white:   '#cccccc'
       # white:   '#1A1C23'
-
-    
-    colors: &colors1
-      primary:
-        background: '#171717'
-        foreground: '#cccccc'
-      normal:
-        black:   '#171717'
-        red:     '#d98c8c'
-        green:   '#9fd98c'
-        yellow:  '#d9c98c'
-        blue:    '#8cadd9'
-        magenta: '#a78cd9'
-        cyan:    '#8cd9c8'
-        white:   '#969696'
-      bright:
-        black:   '#ff1744'
-        red:     '#212121'
-        green:   '#363636'
-        yellow:  '#4f4f4f'
-        blue:    '#707070'
-        magenta: '#999999'
-        cyan:    '#99ffe9' # comments
-        white:   '#cccccc'
-
-    colors: &colors3
-      primary:
-        background: '#1c1e26'
-        foreground: '0xe0e0e0'
-      normal:
-        black: '#1c1e26'
-        red: '0xe95678'
-        green: '0x29d398'
-        yellow: '0xfab795'
-        blue: '0x26bbd9'
-        magenta: '0xee64ac'
-        cyan: '0x59e1e3'
-        white: '0xd5d8da'
-      bright:
-        black: '0x5b5858'
-        red: '0xec6a88'
-        green: '0x3fdaa4'
-        yellow: '0xfbc3a7'
-        blue: '0x3fc4de'
-        magenta: '0xf075b5'
-        cyan: '0x6be4e6'
-        white: '0xd5d8da'
-
 colors: *colors
   # Default colors
     # Bright and dim foreground colors
