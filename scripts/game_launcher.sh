@@ -14,11 +14,9 @@ rofi_theme="with_prompt"
 apex="apex legends"
 jk="jump king"
 lol="league of legends"
-hs="hearthstone"
 mc="minecraft"
 mcsr="minecraft (speedrun)"
 rw="rain world"
-gt="growtopia"
 lc="lethal company"
 gi="genshin impact"
 
@@ -39,9 +37,6 @@ case $option in
         leagueoflegends start
         # WINEDEBUG=-all WINEPREFIX=/home/lassi/.local/share/leagueoflegends/ /home/lassi/Downloads/lutris-GE-Proton8-27-LoL-x86_64/bin/wine "/home/lassi/.local/share/leagueoflegends/drive_c/Riot Games/League of Legends/LeagueClient.exe"
 		;;
-    $hs)
-        env LUTRIS_SKIP_INIT=1 lutris lutris:rungameid/4
-        ;;
     $mc)
         minecraft-launcher
         ;;
@@ -52,9 +47,6 @@ case $option in
 	$rw)
 		steam steam://rungameid/312520
         ;;
-	$gt)
-		WINEPREFIX=~/Games/growtopia/ /home/lassi/Games/growtopia/drive_c/users/lassi/AppData/Local/Growtopia/Growtopia.exe
-		;;
 	$lc)
 		steam steam://rungameid/1966720
 		;;
