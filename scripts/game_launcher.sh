@@ -20,7 +20,7 @@ rw="rain world"
 lc="lethal company"
 gi="genshin impact"
 
-games="$apex\n$gt\n$hs\n$jk\n$lc\n$lol\n$mc\n$mcsr\n$rw\n$gi"
+games="$apex\n$jk\n$lc\n$lol\n$mc\n$mcsr\n$rw\n$gi"
 
 option=$(echo -e "$games" | sort | rofi -i -dmenu -p " game launcher" -theme $rofi_theme)
 [[ -z $option ]] && exit
