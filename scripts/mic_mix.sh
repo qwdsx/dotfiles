@@ -1,7 +1,7 @@
 #!/bin/sh
 
 rofi_theme="with_prompt"
-id_file=$HOME/scripts/pianomic.txt
+id_file=$HOME/scripts/mod_ids.txt
 
 option=$(echo -e "load\nunload" | rofi -i -dmenu -p "load/unload sink" -theme $rofi_theme)
 [[ -z $option ]] && exit

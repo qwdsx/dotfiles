@@ -152,6 +152,10 @@ super + {v,h,space}
 # super + ctrl + {1,2}
 # 	bspc desktop focused -m {DP-0,HDMI-0}
 
+# rotate 90 degrees
+super + alt + r
+	bspc node @parent -R 90
+
 # set sink volume
 XF86Audio{Raise,Lower}Volume
 	pactl set-sink-volume 0 {+5%,-5%}

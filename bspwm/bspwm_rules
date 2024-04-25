@@ -46,9 +46,10 @@ games=(
     "riotclientux.exe" 
     "leagueclientux.exe"
     "leagueclient.exe"
-    "league of legends.exe" 
+	"league of legends.exe"
 	"lutris"
 	"genshinimpact.exe"
+	"riot client.exe"
 	#"Steam"
 	#"steam"
     )
