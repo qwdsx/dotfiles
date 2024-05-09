@@ -29,7 +29,8 @@ floating=(
     "zoom" 
 #     "MultiMC" 
 #     "ninjabrainbot-Main"
-#     #"discord" 
+#     #"discord"
+	"Alacritty"
     )
 for float in ${floating[@]}; do
     bspc rule -a $float state=floating
